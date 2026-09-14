@@ -25,7 +25,7 @@ body {
 }
 
 .phone-screen {
-    background: #ede3e3;
+    background: #18191a;
     border-radius: 32px;
     overflow: hidden;
     display: flex;
@@ -56,12 +56,12 @@ body {
 .username {
     font-weight: 600;
     font-size: 14px;
-    color: #0e0c0c;
+    color: #ffffff;
 }
 
 .more-options {
     cursor: pointer;
-    color: #0e1012;
+    color: #ffffff;
 }
 
 /* Mídia / Foto */
@@ -70,6 +70,7 @@ body {
     width: 100%;
     aspect-ratio: 4 / 5;
     background-color: #eee;
+    cursor: pointer;
 }
 
 .post-media img.main-img {
@@ -101,7 +102,7 @@ body {
     bottom: -2px;
     right: -2px;
     background: #561296;
-    color: rgb(18, 5, 5);
+    color: #ffffff;
     font-size: 10px;
     font-weight: bold;
     width: 16px;
@@ -137,6 +138,7 @@ body {
     cursor: pointer;
     background: none;
     border: none;
+    transition: transform 0.15s ease;
 }
 
 .action-btn svg {
@@ -147,6 +149,17 @@ body {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    transition: all 0.2s ease;
+}
+
+/* Estado de Curtido (Coração Vermelho) */
+.action-btn.liked svg {
+    fill: #e0245e;
+    stroke: #e0245e;
+}
+
+.action-btn.bookmarked svg {
+    fill: #ffffff;
 }
 
 /* Texto de Curtidas */
@@ -170,7 +183,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 12px 0 16px 0;
-    border-top: 1px solid #110f0f;
+    border-top: 1px solid #2f3336;
     background: #131010;
 }
 
